@@ -1,0 +1,30 @@
+<resources>
+
+    // General strings
+    <string name="app_name">ProjetFinal</string>
+    <string name="back_button">Go back</string>
+    <string name="navigate_button">Navigate</string>
+    <string name="manage_button">Manage</string>
+    <string name="history_button">Recent Searches</string>
+
+    // Maps activity strings
+    <string name="title_activity_maps">Map</string>
+    <string name="navigate_content_description">NavigateIcon</string>
+    <string name="clear_content_description">ClearIcon</string>
+
+    // Compass activity strings
+    <string name="compass_content_description">CompassImage</string>
+    <string name="destination_title">Destination: %1$s</string>
+    <string name="destination_text">Coordinates: %1$f, %2$f</string>
+    <string name="distance_m_text">Distance: %1$d m</string>
+    <string name="distance_km_text">Distance: %1$s km</string>
+    <string name="location_text">Current location: %1$f, %2$f</string>
+
+    // Manage activity strings
+    <string name="initial_battery">Initial battery level: %1$d%%</string>
+    <string name="used_battery">Used battery: %1$d%%</string>
+    
+    // History activity strings
+    <string name="recent_title">Recent Places</string>
+    <string name="system_state_title">System status</string>
+</resources>

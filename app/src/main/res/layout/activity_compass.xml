@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MapsActivity"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:gravity="center">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/destination_title" android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp" android:text="Destination: Montreal" android:layout_marginStart="5dp"
+    />
+    <TextView
+            android:text="Distance: 000m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/distance_text" android:textSize="18sp"
+            android:layout_marginStart="5dp"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/compass" android:id="@+id/compass_image"
+            android:contentDescription="@string/compass_content_description"/>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".ManageActivity"
+                                             android:id="@+id/linearLayout">
+    <TextView
+            android:text="@string/system_state_title"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:id="@+id/activity_manage_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="24sp" android:textStyle="bold"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_battery_unknown"
+            android:id="@+id/ic_battery_status"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/activity_manage_title"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/info_battery_status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintTop_toTopOf="@+id/ic_battery_status"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_battery_status"
+            app:layout_constraintStart_toEndOf="@+id/ic_battery_status" android:layout_marginStart="30dp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_history"
+            android:id="@+id/battery_conso"
+            app:layout_constraintTop_toBottomOf="@+id/ic_battery_status"
+            android:layout_marginTop="30dp" app:layout_constraintStart_toStartOf="@+id/ic_battery_status"
+            app:layout_constraintEnd_toEndOf="@+id/ic_battery_status"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/info_battery_conso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintTop_toTopOf="@+id/battery_conso"
+            app:layout_constraintBottom_toBottomOf="@+id/battery_conso"
+            app:layout_constraintStart_toEndOf="@+id/battery_conso" android:layout_marginStart="30dp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_download"
+            android:id="@+id/ic_download"
+            app:layout_constraintTop_toBottomOf="@+id/battery_conso"
+            android:layout_marginTop="30dp" app:layout_constraintEnd_toEndOf="@+id/battery_conso"
+            app:layout_constraintStart_toStartOf="@+id/battery_conso"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_download"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text=""
+            app:layout_constraintTop_toTopOf="@+id/ic_download"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_download"
+            app:layout_constraintStart_toEndOf="@+id/ic_download" android:layout_marginStart="30dp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_upload"
+            android:id="@+id/ic_upload"
+            app:layout_constraintTop_toBottomOf="@+id/ic_download"
+            android:layout_marginTop="30dp" app:layout_constraintEnd_toEndOf="@+id/ic_download"
+            app:layout_constraintStart_toStartOf="@+id/ic_download"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/info_upload"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text=""
+            app:layout_constraintTop_toTopOf="@+id/ic_upload" app:layout_constraintBottom_toBottomOf="@+id/ic_upload"
+            app:layout_constraintStart_toEndOf="@+id/ic_upload" android:layout_marginStart="30dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" android:text="clear saved places"
+            android:layout_marginTop="45dp" app:layout_constraintTop_toBottomOf="@+id/info_upload"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" android:onClick="onClearPressed"/>
+</android.support.constraint.ConstraintLayout>

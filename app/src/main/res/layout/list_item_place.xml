@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            app:srcCompat="@drawable/google_maps_marker"/>
+
+    <!-- Title Of Song-->
+    <TextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/list_image"
+            android:layout_toRightOf="@+id/list_image"
+            android:text="Montreal"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="15dip"
+            android:textStyle="bold" android:paddingLeft="5dip"/>
+
+    <!-- Artist Name -->
+    <TextView
+            android:id="@+id/place_coordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_name"
+            android:textColor="#343434"
+            android:textSize="10dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/list_image"
+            android:text="Lat: 0.0 Lng: 0.0" android:paddingLeft="5dip"/>
+
+    <!-- Rightend Arrow -->
+    <ImageView android:layout_width="40dip"
+               android:layout_height="40dip"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true" app:srcCompat="@android:drawable/ic_menu_directions"/>
+
+</RelativeLayout>

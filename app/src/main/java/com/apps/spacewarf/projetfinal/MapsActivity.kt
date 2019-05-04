@@ -195,7 +195,7 @@ class MapsActivity : AppCompatActivity(),
      */
     private fun setupPlacesAPI() {
         if (!Places.isInitialized()) {
-            Places.initialize(applicationContext, "AIzaSyAcONg9pXhfzxwCvpzKJii2I3sw_E_5e5c")
+            Places.initialize(applicationContext, "GOOGLE_API_KEY_HERE")
             placesClient = Places.createClient(this)
         }
 
